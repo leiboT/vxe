@@ -2,7 +2,7 @@ var vm = new Vue({
     el: "#root",
     data: function () {
         return {
-            message: "hello world",
+            message: moment(),
             visible: false,
             tableData: [{
                 name: "aa"
@@ -11,6 +11,14 @@ var vm = new Vue({
         }
     },
     methods: {
-
+        save: function () {
+            alert(this.message)
+        },
+        saveAnother: function () {
+            var a = this.tableData;
+            debugger
+        },
+        cancel: function () {},
+        preview: function () {},
     }
 })
